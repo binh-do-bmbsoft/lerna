@@ -48,14 +48,16 @@ const MainLayout = ({ children }) => {
         <Box paddingX={5} paddingY={3}>
           <TopHeader />
 
-          <Grid container>
-            <Grid item xs={4}>
-              <SideBar />
+          <Box marginTop={3}>
+            <Grid container>
+              <Grid item xs={4}>
+                <SideBar />
+              </Grid>
+              <Grid item xs={8}>
+                <div>{children}</div>
+              </Grid>
             </Grid>
-            <Grid item xs={8}>
-              <div>{children}</div>
-            </Grid>
-          </Grid>
+          </Box>
         </Box>
       </div>
     </Box>
