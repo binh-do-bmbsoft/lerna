@@ -45,7 +45,7 @@ const LoginView = () => {
   const classes = useStyles();
 
   return (
-    <Page className={classes.root} title="BookiPay - Login">
+    <Page className={classes.root} title="Recognition - Login">
       <Container className={classes.cardContainer} maxWidth="sm">
         <Box mb={8} display="flex" justifyContent="center">
           {/* <RouterLink to={ROUTER_NAME.DEFAULT}>
