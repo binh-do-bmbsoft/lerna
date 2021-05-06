@@ -3,7 +3,7 @@ export const LOADING_ACTION_TYPES = {
 };
 
 export const createSetLoadingStateAction = isLoading => ({
-  type: LoadingActionTypes.SET_LOADING_STATE,
+  type: LOADING_ACTION_TYPES.SET_LOADING_STATE,
   payload: {
     isLoading: isLoading
   }
