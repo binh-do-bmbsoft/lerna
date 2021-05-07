@@ -75,7 +75,8 @@ export const AuthProvider = ({ children }) => {
     dispatch({
       type: ACTION_TYPE.INITIALISE,
       payload: {
-        isAuthenticated: false,
+        // isAuthenticated: false,
+        isAuthenticated: true,
         user: null
       }
     });

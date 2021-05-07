@@ -1,6 +1,5 @@
-import { useSelector, useDispatch } from 'redux';
 import { createSetLoadingStateAction } from 'src/redux/store/loading/action';
-
+import { useDispatch, useSelector } from 'react-redux';
 function useLoading() {
   const dispatch = useDispatch();
   const isLoading = useSelector(state => state.loading.isLoading);

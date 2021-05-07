@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import NProgress from 'nprogress';
 import { makeStyles, LinearProgress } from '@material-ui/core';
+import useLoading from 'src/shared/hooks/useLoading';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -15,7 +16,7 @@ const useStyles = makeStyles(() => ({
 
 const LoadingScreen = () => {
   const classes = useStyles();
-
+  const [isLoading, setIsLoading] = useLoading();
   useEffect(() => {
     NProgress.start();
 
