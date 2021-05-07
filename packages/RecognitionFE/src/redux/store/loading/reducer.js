@@ -1,7 +1,7 @@
 import { LOADING_ACTION_TYPES } from './action';
 
 const initialState = {
-  isLoading: true
+  isLoading: false
 };
 
 export default (state = initialState, action) => {

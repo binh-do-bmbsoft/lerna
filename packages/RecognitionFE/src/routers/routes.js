@@ -10,6 +10,7 @@ import MainLayout from 'src/layouts/MainLayout';
 import HomePageView from 'src/views/HomePage';
 
 import { ROUTER_NAME } from 'src/shared/constants';
+import LabScreen from 'src/views/Lab';
 
 export const renderRoutes = (routes = []) => (
   <Suspense fallback={<LoadingScreen />}>
@@ -57,6 +58,11 @@ const routes = [
         exact: true,
         path: ROUTER_NAME.DEFAULT,
         component: HomePageView
+      },
+      {
+        exact: true,
+        path: ROUTER_NAME.LAB,
+        component: LabScreen
       },
       {
         component: () => <Redirect to={ROUTER_NAME.NOT_FOUND} />
