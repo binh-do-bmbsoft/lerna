@@ -4,6 +4,7 @@ import { Box, Grid, makeStyles } from '@material-ui/core';
 import TopHeader from './TopHeader';
 import SideBar from './SideBar';
 import styles from './styles.module.scss';
+import LoadingView from './Loading/index';
 
 const useStyles = makeStyles(() => ({
   rootContainer: {
@@ -32,7 +33,6 @@ const useStyles = makeStyles(() => ({
 
 const MainLayout = ({ children }) => {
   const classes = useStyles();
-
   return (
     <Box className={classes.rootContainer}>
       <div className={classes.topImage}>
@@ -54,6 +54,7 @@ const MainLayout = ({ children }) => {
           </Box>
         </Box>
       </div>
+      <LoadingView />
     </Box>
   );
 };
