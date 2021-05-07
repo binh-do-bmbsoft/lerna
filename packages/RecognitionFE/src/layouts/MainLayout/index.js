@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import { Box, Grid, makeStyles } from '@material-ui/core';
 import TopHeader from './TopHeader';
 import SideBar from './SideBar';
+import styles from './styles.module.scss';
 
 const useStyles = makeStyles(() => ({
-  root: {
+  rootContainer: {
     position: 'relative',
     minHeight: window.innerHeight
   },
@@ -26,13 +27,6 @@ const useStyles = makeStyles(() => ({
       height: window.outerHeight / 2,
       objectFit: 'cover'
     }
-  },
-  mainContainer: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: 'auto'
   }
 }));
 
@@ -40,11 +34,11 @@ const MainLayout = ({ children }) => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.root}>
+    <Box className={classes.rootContainer}>
       <div className={classes.topImage}>
         <img src="https://worldcoffeeresearch.org/media/images/AdobeStock_79539495.width-1280.jpg" alt="Mercon" />
       </div>
-      <div className={classes.mainContainer}>
+      <div className={styles.mainContainer}>
         <Box paddingX={5} paddingY={3}>
           <TopHeader />
 
