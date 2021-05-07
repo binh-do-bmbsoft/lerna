@@ -1,0 +1,16 @@
+@import '../../../../assets/css/_variable.scss';
+.sugesstion-container {
+    
+    .avatar {
+        width: 20px;
+        height: 20px;
+    }
+
+    .display-name {
+        color: $gray;
+    }
+}
+
+.sugesstion-container-focus {
+    background-color: $yellow;
+}
