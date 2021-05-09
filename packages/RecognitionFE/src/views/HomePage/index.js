@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core';
 
 //--- Component
 import Page from 'src/components/Page';
-
+import DemoComponent from 'demo-project-2/src/demoComponent';
 const useStyles = makeStyles(theme => ({
   root: {}
 }));
@@ -15,7 +15,7 @@ const HomePageView = () => {
   return (
     <Page title="Home page" className={classes.root}>
       <div>
-
+        <DemoComponent />
       </div>
     </Page>
   );
